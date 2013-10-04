@@ -4,7 +4,7 @@ include_once('simple_html_dom.php');
 
 $program = $_POST['program'];
 
-$html = file_get_html('http://www.newschool.edu/parsons/' . $program . '/');
+$html = file_get_html('http://www.newschool.edu/parsons/' . $program);
 //$html = file_get_html('youtube.htm');
 //$html = file_get_html('Product.ibatis.xml');
 foreach($html->find('.tablecloth') as $element) 
