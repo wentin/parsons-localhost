@@ -157,7 +157,7 @@ function loaddata(){
     /**********Load School SCE *******/
     /*
 	loadIntroduction({
-        "program" : 'masters-architecture(the last part of url for introducation)',
+        "program" : 'masters-architecture(the last part of url for introduction)',
     }, "ArchitectureMArch(the id name from the html for '.rightCol')");
     loadCurriculum({
         "program" : 'm-arch-architecture-curriculum(the last part of url for curriculum)',

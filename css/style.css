@@ -236,6 +236,7 @@ ul.menu {
 .tileWrapper {
 	width: 3080px;
 	float: left;
+	padding-bottom: 198px;
 }
 .homeTile {
 	width: 260px;
