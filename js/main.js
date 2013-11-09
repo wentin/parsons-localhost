@@ -25,6 +25,34 @@ function loaded () {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
+function loadContent(url, selector){
+	var url = url;
+	var selector = selector;
+	var data = {url: url, selector: selector};
+	var data_encoded = JSON.stringify(data);
+	var returnData;
+	$.ajax({
+		type: "POST",
+		//url: "http://wentin.co/parsons-web/getcontent.php",
+		url: "getcontent.php",
+      	async: false,  
+		data: {
+			"data" : data_encoded
+		},
+		datatype: "html",
+		success: function(data, textStatus, xhr){
+			returnData = data;
+		},
+		// Alert status code and error if fail
+		error: function (xhr, ajaxOptions, thrownError){
+			returnData = xh4.status;
+			//return(xhr.status);
+			//alert(thrownError);
+		}
+	});    	
+	return(returnData);
+}
+
 
 function loadCurriculum(programInfo, programName, side){
 	var postData = programInfo;
@@ -37,7 +65,7 @@ function loadCurriculum(programInfo, programName, side){
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			$('#'+programName+' .'+side+' .curriculumWrapper').html(data);
+			//$('#'+programName+' .'+side+' .curriculumWrapper').html(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
@@ -57,7 +85,7 @@ function loadIntroduction(programInfo, programName){
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			$('#'+programName+' #introduction .scroll').html(data);
+			//$('#'+programName+' #introduction .scroll').html(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
@@ -71,6 +99,7 @@ $(function(){
 	
 	loaded();
 	
+    
     loaddata();
 
 
