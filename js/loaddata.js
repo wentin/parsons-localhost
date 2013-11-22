@@ -1,4 +1,6 @@
 function loaddata(){
+    var content = loadContent('http://www.newschool.edu/parsons/about/', '.col-700 p', '#introduction #introduction');
+    
 	/**********Load School ADHT*******/
     loadIntroduction({
         "program" : 'aas-graphic-design-programs',

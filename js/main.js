@@ -25,9 +25,10 @@ function loaded () {
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
-function loadContent(url, selector){
+function loadContent(url, selector, targetSelector){
 	var url = url;
 	var selector = selector;
+	var targetSelector = targetSelector;
 	var data = {url: url, selector: selector};
 	var data_encoded = JSON.stringify(data);
 	var returnData;
@@ -41,6 +42,7 @@ function loadContent(url, selector){
 		},
 		datatype: "html",
 		success: function(data, textStatus, xhr){
+			$(targetSelector).html(data);
 			returnData = data;
 		},
 		// Alert status code and error if fail
@@ -50,6 +52,7 @@ function loadContent(url, selector){
 			//alert(thrownError);
 		}
 	});    	
+	console.log(returnData)
 	return(returnData);
 }
 
@@ -99,9 +102,7 @@ $(function(){
 	
 	loaded();
 	
-    
     loaddata();
-
 
 	/*$('#homeView').scroll(function() {
 		console.log($('#homeView').scrollLeft());

@@ -10,6 +10,6 @@ $url = $data_array["url"];
 $selector = $data_array["selector"];
 
 $html = file_get_html($url);
-foreach($html->find(".col-700 p") as $element) 
+foreach($html->find($selector) as $element) 
        echo $element->outertext;
 ?>
