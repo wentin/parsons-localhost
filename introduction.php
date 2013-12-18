@@ -7,7 +7,12 @@ $program = $_POST['program'];
 $html = file_get_html('http://www.newschool.edu/parsons/' . $program . '/');
 //$html = file_get_html('youtube.htm');
 //$html = file_get_html('Product.ibatis.xml');
-foreach($html->find('.col-520') as $element) 
-       echo $element->outertext;
+foreach($html->find('.col-520') as $element)  {
+	foreach($element->find('script') as $script) 
+       {
+       		$script->innertext = ' ';
+       }
+    echo $element->outertext;
+}
 
 ?>

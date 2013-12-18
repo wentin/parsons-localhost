@@ -10,6 +10,11 @@ $url = $data_array["url"];
 $selector = $data_array["selector"];
 
 $html = file_get_html($url);
-foreach($html->find($selector) as $element) 
-       echo $element->outertext;
+foreach($html->find($selector) as $element)  {
+	foreach($element->find('script') as $script) 
+       {
+       		$script->innertext = ' ';
+       }
+    echo $element->outertext;
+}
 ?>

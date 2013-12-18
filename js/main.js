@@ -34,7 +34,7 @@ function loadContent(url, selector, targetSelector){
 	var returnData;
 	$.ajax({
 		type: "POST",
-		//url: "http://wentin.co/parsons-web/getcontent.php",
+		//url: "http://wentin.co/parsons-localhost/getcontent.php",
 		url: "getcontent.php",
       	async: false,  
 		data: {
@@ -48,12 +48,12 @@ function loadContent(url, selector, targetSelector){
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
 			returnData = xh4.status;
-			//return(xhr.status);
-			//alert(thrownError);
+			console.log(xhr.status);
+			console.log(thrownError);
 		}
 	});    	
-	console.log(returnData)
-	return(returnData);
+	//console.log(returnData)
+	//return(returnData);
 }
 
 
@@ -63,17 +63,17 @@ function loadCurriculum(programInfo, programName, side){
 	var side = side;
 	$.ajax({
 		type: "POST",
-		//url: "http://wentin.co/parsons-web/curriculum.php",
+		//url: "http://wentin.co/parsons-localhost/curriculum.php",
 		url: "curriculum.php",
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			//$('#'+programName+' .'+side+' .curriculumWrapper').html(data);
+			$('#'+programName+' .'+side+' .curriculumWrapper').html(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
-			alert(xhr.status);
-			alert(thrownError);
+			console.log(xhr.status);
+			console.log(thrownError);
 		}
 	});    	
 }
@@ -83,17 +83,17 @@ function loadIntroduction(programInfo, programName){
 	var programName = programName;
 	$.ajax({
 		type: "POST",
-		//url: "http://wentin.co/parsons-web/introduction.php",
+		//url: "http://wentin.co/parsons-localhost/introduction.php",
 		url: "introduction.php",
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			//$('#'+programName+' #introduction .scroll').html(data);
+			$('#'+programName+' #introduction .scroll').html(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
-			alert(xhr.status);
-			alert(thrownError);
+			console.log(xhr.status);
+			console.log(thrownError);
 		}
 	});    	
 }
