@@ -186,8 +186,8 @@ function secondViewEnter(program) {
 		function() {  
 			$('.wrapper').removeClass('active');
 			$(program).addClass('active');
-			
 			contentScrollcontentScroll = new IScroll('.scrollWrapper', { mouseWheel: true });
+			contentScrollcontentScroll.refresh();
 			/*$thisRightCol.animate({
 				left: 0	
 			}, 700, 'easeInOutQuad', function(){
