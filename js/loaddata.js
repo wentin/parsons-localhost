@@ -166,16 +166,144 @@ function loaddata(){
     }, "ArchitectureMArch(the id name from the html for '.rightCol')","left(load to the left column or right column)");
 
 	*/
+    //ad bfa
+     loadIntroduction({
+        "program" : 'bfa-architecture-design',
+    }, "ArchitecturalDesignBFA");
+    loadCurriculum({
+        "program" : 'bfa-architecture-design-curriculum',
+    }, "ArchitecturalDesignBFA","left");//cant find ba/bfa
 
+//a m.arch
     loadIntroduction({
         "program" : 'masters-architecture',
     }, "ArchitectureMArch");
     loadCurriculum({
         "program" : 'm-arch-architecture-curriculum',
     }, "ArchitectureMArch","left");
+    loadCurriculum({
+        "program" : 'm-arch-architecture-mfa-lighting-design-curriculum',
+    }, "ArchitectureMArch","right");//check
+
+//ld mfa
+     loadIntroduction({
+        "program" : 'lighting-design',
+    }, "LightingDesignMFA");
+    loadCurriculum({
+        "program" : 'mfa-lighting-design-curriculum',
+    }, "LightingDesignMFA","left");
+     loadCurriculum({
+        "program" : 'm-arch-architecture-mfa-lighting-design-curriculum',
+    }, "LightingDesignMFA","right");//check
+
+
+//interior design aas
+    loadIntroduction({
+        "program" : 'aas-interior-design-programs',
+    }, "InteriorDesignAAS");
+    loadCurriculum({
+        "program" : 'aas-interior-design-curriculum',
+    }, "InteriorDesignAAS","left");//fast track is on the same page
+     
+//interior design bfa
+    loadIntroduction({
+        "program" : 'bfa-interior-design',
+    }, "InteriorDesignBFA");
+    loadCurriculum({
+        "program" : 'bfa-interior-design-curriculum',
+    }, "InteriorDesignBFA","left");// cant find ba/bfa
+     
+//interior disign mfa
+    loadIntroduction({
+        "program" : 'mfa-interior-design',
+    }, "InteriorDesignMFA");
+    loadCurriculum({
+        "program" : 'mfa-interior-design-curriculum',
+    }, "InteriorDesignMFA","left");//on same page
+
+//product design bfa
+    loadIntroduction({
+        "program" : 'product-design',
+    }, "ProductDesignBFA");
+    loadCurriculum({
+        "program" : 'product-design-curriculum',
+    }, "ProductDesignBFA","left");//can't find BA/BFA
+    
+
+
+
+
 
 
     /**********Load School SDS *******/
+//db gc
+    loadIntroduction({
+        "program" : 'design-business-online-graduate-certificate',
+    }, "designBusinessGRADUATECERTIFICATE");
+    loadCurriculum({
+        "program" : 'design-business-online-graduate-certificate-curriculum',
+    }, "designBusinessGRADUATECERTIFICATE","left");
+    
+//due ms
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+    
+
+//es ba
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+    loadCurriculum({
+        "program" : '',
+    }, "","right");
+//id bfa
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+    loadCurriculum({
+        "program" : '',
+    }, "","right");
+//sdm ms
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+    
+//tup ma
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+   
+//td mfa
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+   
+//ud bs
+    loadIntroduction({
+        "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
     
 
     /**********Load School Fasion *******/

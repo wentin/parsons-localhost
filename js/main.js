@@ -241,3 +241,23 @@ function secondViewExit() {
 	);
 	
 }
+
+//add academic canlendar
+function loadAcademiccanlendar(){
+	
+	$.ajax({
+		type: "POST",
+		//url: "http://wentin.co/parsons-localhost/academiccalendar.php",
+		url: "academiccalendar.php",
+		datatype: "html",
+		success: function(data, textStatus, xhr){
+
+			$('#academicCalendar .scroll').html(data);
+		},
+		// Alert status code and error if fail
+		error: function (xhr, ajaxOptions, thrownError){
+			console.log(xhr.status);
+			console.log(thrownError);
+		}
+	});    	
+}
