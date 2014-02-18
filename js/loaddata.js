@@ -244,7 +244,7 @@ function loaddata(){
         "program" : 'design-business-online-graduate-certificate-curriculum',
     }, "designBusinessGRADUATECERTIFICATE","left");
     
-//due ms
+/*//due ms
     loadIntroduction({
         "program" : '',
     }, "");
@@ -303,7 +303,7 @@ function loaddata(){
     }, "");
     loadCurriculum({
         "program" : '',
-    }, "","left");
+    }, "","left");*/
     
 
     /**********Load School Fasion *******/

@@ -286,7 +286,7 @@ ul li span {
 }
 
 .homeTile#About {
-	background-color: rgba(232, 46, 33, 0.85);
+	background-color: rgba(232, 46, 33, 0.85);	
 }
 .homeTile#ADHT {
 	background-color: rgba(216, 60, 141, 0.85);	
@@ -307,6 +307,31 @@ ul li span {
 	background-color: rgba(227, 188, 16, 0.85);	
 }
 /*************home view end, program color begins **********************/
+#ABOUTView li.first {
+	background-color: rgba(232, 46, 33, 0.85);	
+}
+#ABOUTView li.second {
+	background-color: rgba(207, 41, 29, 0.85);	
+}
+#ABOUTView li.third {
+	background-color: rgba(181, 36, 25, 0.85);	
+}
+#ABOUTView li.fourth {
+	background-color: rgba(156, 31, 22, 0.85);	
+}
+#ABOUTView li.fifth {
+	background-color: rgba(130, 26, 18, 0.85);	
+}
+#ABOUTView li.sixth {
+	background-color: rgba(105, 21, 15, 0.85);	
+}
+#ABOUTView li.seventh {
+	background-color: rgba(77, 14, 7, 0.85);	
+}
+#ABOUTView .rightCol h1 {
+	border-bottom: solid 2px rgb(232, 46, 33);
+}
+
 #AMTView li.first {
 	background-color: rgba(152, 56, 184, 0.85);	
 }
