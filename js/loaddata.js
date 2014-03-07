@@ -244,73 +244,146 @@ function loaddata(){
         "program" : 'design-business-online-graduate-certificate-curriculum',
     }, "designBusinessGRADUATECERTIFICATE","left");
     
-/*//due ms
+//due ms
     loadIntroduction({
-        "program" : '',
-    }, "");
+        "program" : 'ms-design-urban-ecology',
+    }, "designAndUrbanEcologiesMS");
     loadCurriculum({
-        "program" : '',
-    }, "","left");
+        "program" : 'ms-design-urban-ecologies-curriculum',
+    }, "designAndUrbanEcologiesMS","left");
     
 
-//es ba
+//es bs
     loadIntroduction({
-        "program" : '',
-    }, "");
+        "program" : 'bachelors-environmental-studies',
+    }, "environmentalStudiesBS");
     loadCurriculum({
         "program" : '',
-    }, "","left");
+    }, "environmentalStudiesBS","left");
     loadCurriculum({
         "program" : '',
-    }, "","right");
+    }, "environmentalStudiesBS","right");//missing curriculum info
 //id bfa
     loadIntroduction({
-        "program" : '',
-    }, "");
+        "program" : 'bfa-integrated-design',
+    }, "integratedDesignBFA");
+    loadCurriculum({
+        "program" : 'bfa-integrated-design-curriculum',
+    }, "integratedDesignBFA","left");
     loadCurriculum({
         "program" : '',
-    }, "","left");
+    }, "integratedDesignBFA","right");//missing ba
+
+//sdm bba
+    loadIntroduction({
+        "program" : 'bba-design-management',
+    }, "strategicDesignAndManagementBBA");
     loadCurriculum({
-        "program" : '',
-    }, "","right");
+        "program" : 'bba-design-management-curriculum',
+    }, "strategicDesignAndManagementBBA","left");
+    
 //sdm ms
     loadIntroduction({
-        "program" : '',
-    }, "");
+        "program" : 'masters-design-management',
+    }, "strategicDesignAndManagementMS");
     loadCurriculum({
-        "program" : '',
-    }, "","left");
+        "program" : 'masters-design-management-curriculum',
+    }, "strategicDesignAndManagementMS","left");
     
 //tup ma
     loadIntroduction({
-        "program" : '',
-    }, "");
+        "program" : 'ma-theories-urban-research',
+    }, "theoriesOfUrbanPracticeMA");
     loadCurriculum({
-        "program" : '',
-    }, "","left");
+        "program" : 'ma-theories-of-urban-practice-curriculum',
+    }, "theoriesOfUrbanPracticeMA","left");
    
 //td mfa
     loadIntroduction({
+        "program" : 'mfa-transdisciplinary-design',
+    }, "transdisciplinaryDesignMFA");
+    loadCurriculum({
+        "program" : 'mfa-transdisciplinary-design-curriculum',
+    }, "transdisciplinaryDesignMFA","left");
+   
+//ud bs
+    loadIntroduction({
+        "program" : 'bs-urban-design',
+    }, "urbanDesignBS");
+    loadCurriculum({
+        "program" : 'bs-urban-design-curriculum',
+    }, "urbanDesignBS","left");
+    
+
+    /**********Load School Fasion *******/
+//fd aas
+    loadIntroduction({
+        "program" : 'aas-fashion-design-programs',
+    }, "FashionDesignAAS");
+    loadCurriculum({
+        "program" : 'aas-fashion-design-curriculum',
+    }, "FashionDesignAAS","left");
+    loadCurriculum({
+        "program" : '',
+    }, "FashionDesignAAS","right");// three kinds of curriculums at the same page
+//fd bfa
+    loadIntroduction({
+        "program" : 'bfa-fashion-design',
+    }, "FashionDesignBFA");
+    loadCurriculum({
+        "program" : 'bfa-fashion-design-curriculum',
+    }, "FashionDesignBFA","left");
+    loadCurriculum({
+        "program" : '',
+    }, "FashionDesignBFA","right");//missing ba 
+//fds mfa
+    loadIntroduction({
+        "program" : 'mfa-fashion-design-society',
+    }, "FashionDesignandSocietyMFA");
+    loadCurriculum({
+        "program" : 'mfa-fashion-design-society-curriculum',
+    }, "FashionDesignandSocietyMFA","left");
+    loadCurriculum({
+        "program" : '',
+    }, "FashionDesignandSocietyMFA","right");//the whole curriculum is not on ipad app
+//fm aas
+    loadIntroduction({
+        "program" : 'aas-fashion-marketing-programs',
+    }, "FashionMarketingAAS");
+    loadCurriculum({
+        "program" : 'fashion-marketing-degree-curriculum',
+    }, "FashionMarketingAAS","left");
+    loadCurriculum({
+        "program" : 'fashion-marketing-degree-curriculum',
+    }, "FashionMarketingAAS","right");//fast track is on the same page
+    /**********Load School CONTINUING STUDIES *******/
+//summer program
+    /*loadIntroduction({
         "program" : '',
     }, "");
     loadCurriculum({
         "program" : '',
     }, "","left");
-   
-//ud bs
-    loadIntroduction({
+    loadCurriculum({
         "program" : '',
+    }, "","right");
+    //pre-college academy
+     "program" : '',
     }, "");
     loadCurriculum({
         "program" : '',
-    }, "","left");*/
-    
-
-    /**********Load School Fasion *******/
-
-
-    /**********Load School CONTINUING STUDIES *******/
-
-
+    }, "","left");
+    loadCurriculum({
+        "program" : '',
+    }, "","right");
+    //continuing education
+     "program" : '',
+    }, "");
+    loadCurriculum({
+        "program" : '',
+    }, "","left");
+    loadCurriculum({
+        "program" : '',
+    }, "","right");*/
 
 }

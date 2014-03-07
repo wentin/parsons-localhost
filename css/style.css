@@ -15,6 +15,11 @@ body {
 	color: white;
 	background-color: black;
 }
+#home-slideshow {
+	float: left;
+	width: 694px;
+	height: 615px;
+}
 .clr {
 	clear: both;
 }
@@ -151,15 +156,20 @@ ul.menu {
 }
 .scrollWrapper {
 	overflow: hidden;
-	height: 615px;
+	height: 658px;
 	width: 100%;
 	display: none;
 }
 .scrollWrapper.active {
 	display: block;	
 }
+.scrollWrap {
+	float: left;
+	height: 571px;
+}
 .scroll {	
 	float: left;
+	height: 615px;
 }
 .scroll a {
 	color: white;

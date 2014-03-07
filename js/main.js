@@ -1,7 +1,7 @@
 var homeAnimationTime = 700;
 var homeScroll, contentScroll;
 
-
+			
 /*function updatePosition () {
 	console.log(this.x);
 	var scrollLeft = -this.x;
@@ -21,6 +21,7 @@ function loaded () {
 			speedRatioY: 0.5
 		}]
 	});
+	contentScroll = new IScroll('.scrollWrap', { mouseWheel: true });
 }
 
 document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
@@ -42,7 +43,7 @@ function loadContent(url, selector, targetSelector){
 		},
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			$(targetSelector).html(data);
+			$(targetSelector).append(data);
 			returnData = data;
 		},
 		// Alert status code and error if fail
@@ -68,7 +69,7 @@ function loadCurriculum(programInfo, programName, side){
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			$('#'+programName+' .'+side+' .curriculumWrapper').html(data);
+			$('#'+programName+' .'+side+' .curriculumWrapper').append(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
@@ -88,7 +89,7 @@ function loadIntroduction(programInfo, programName){
 		data: postData, 
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-			$('#'+programName+' #introduction .scroll').html(data);
+			$('#'+programName+' #introduction .scroll').append(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
@@ -182,12 +183,29 @@ function secondViewEnter(program) {
 	$('.logo').animate({
 		left: -250	
 	}, homeAnimationTime, 'easeInOutQuad');
+
+
+	contentScroll.refresh();
+
+	TNS.slideshow("#home-slideshow", {
+	      albumId: 72407, 
+	      caption: true,        
+	      width: 694,
+	      height: 615,
+	      animation: "slide",
+	      random: true,
+	      controlNav: false,
+	      linkable: false
+	  });
 	window.setTimeout(  
+
+
 		function() {  
+
+
 			$('.wrapper').removeClass('active');
 			$(program).addClass('active');
-			
-			contentScrollcontentScroll = new IScroll('.scrollWrapper', { mouseWheel: true });
+
 			/*$thisRightCol.animate({
 				left: 0	
 			}, 700, 'easeInOutQuad', function(){
@@ -252,7 +270,7 @@ function loadAcademiccanlendar(){
 		datatype: "html",
 		success: function(data, textStatus, xhr){
 
-			$('#academicCalendar .scroll').html(data);
+			$('#academicCalendar .scroll').append(data);
 		},
 		// Alert status code and error if fail
 		error: function (xhr, ajaxOptions, thrownError){
