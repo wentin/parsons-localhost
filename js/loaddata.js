@@ -1,4 +1,22 @@
 function loaddata(){
+    $.ajax({
+        type: "POST",
+        //url: "http://wentin.co/parsons-localhost/getcontent.php",
+        url: "news.php",
+        async: false,  
+        datatype: "html",
+        success: function(data, textStatus, xhr){
+            $('#aboutParsons #news .scroll').append(data);
+            returnData = data;
+        },
+        // Alert status code and error if fail
+        error: function (xhr, ajaxOptions, thrownError){
+            returnData = xh4.status;
+            console.log(xhr.status);
+            console.log(thrownError);
+        }
+    });    
+
     var content = loadContent('http://www.newschool.edu/parsons/about/', '.col-700 p', '#introduction #introduction');
     
 	/**********Load School ADHT*******/

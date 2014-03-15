@@ -1,16 +1,19 @@
 <?php
-error_reporting(E_ALL);
-include_once('simple_html_dom.php');
 
-$html = file_get_html('http://www.newschool.edu/parsons/');
-//$html = file_get_html('youtube.htm');
-//$html = file_get_html('Product.ibatis.xml');
-foreach($html->find('.newsRSS') as $element)  {
-	foreach($element->find('script') as $script) 
-       {
-       		$script->innertext = ' ';
-       }
-    echo $element->outertext;
+define('MAGPIE_DIR', 'magpie/');
+require_once(MAGPIE_DIR.'rss_fetch.inc');
+
+$url = "http://blogs.newschool.edu/news/category/schools/parsons/feed/";
+
+if ( $url ) {
+	$rss = fetch_rss( $url );
+	echo "<ul>";
+	foreach ($rss->items as $item) {
+		$href = $item['link'];
+		$title = $item['title'];
+		$pubDate = $item['pubDate'];
+		echo "<li>$pubDate<a href=$href>$title</a></li>";
+	}
+	echo "</ul>";
 }
-
 ?>
