@@ -170,6 +170,9 @@ ul.menu {
 .scroll {	
 	float: left;
 	height: 615px;
+	
+  overflow-y: scroll; /* has to be scroll, not auto */
+  -webkit-overflow-scrolling: touch;
 }
 .scroll a {
 	color: white;

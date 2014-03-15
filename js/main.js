@@ -137,7 +137,7 @@ $(function(){
 		});
 	} )
 	
-	$('.homeTile').on( "tap", function( event ) {
+	$('.homeTile').bind( "tapone", function( event ) {
 		/*$('.homeTile').animate({
 		opacity : 0.1,
 		height  : 900, // You desired height.
@@ -147,7 +147,6 @@ $(function(){
 		var targetViewId = $(this).attr('id')+'View';
 		secondViewEnter('#'+targetViewId);
 	} )
-
 
 	$('.mainMenu').live('click', function(){
 		secondViewExit();
