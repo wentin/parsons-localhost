@@ -1,19 +1,28 @@
-<?php
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>news</title>
+</head>
+<body>
+	<?php
 
-define('MAGPIE_DIR', 'magpie/');
-require_once(MAGPIE_DIR.'rss_fetch.inc');
+	define('MAGPIE_DIR', 'magpie/');
+	require_once(MAGPIE_DIR.'rss_fetch.inc');
 
-$url = "http://blogs.newschool.edu/news/category/schools/parsons/feed/";
+	$url = "http://blogs.newschool.edu/news/category/schools/parsons/feed/";
 
-if ( $url ) {
-	$rss = fetch_rss( $url );
-	echo "<ul>";
-	foreach ($rss->items as $item) {
-		$href = $item['link'];
-		$title = $item['title'];
-		$pubDate = $item['pubDate'];
-		echo "<li>$pubDate<a href=$href>$title</a></li>";
+	if ( $url ) {
+		$rss = fetch_rss( $url );
+		echo "<ul>";
+		foreach ($rss->items as $item) {
+			$href = $item['link'];
+			$title = $item['title'];
+			$pubDate = $item['pubDate'];
+			echo "<li>$pubDate<a href=$href>$title</a></li>";
+		}
+		echo "</ul>";
 	}
-	echo "</ul>";
-}
-?>
+	?>
+</body>
+</html>
