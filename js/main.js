@@ -268,7 +268,6 @@ function loadAcademiccanlendar(){
 		url: "academiccalendar.php",
 		datatype: "html",
 		success: function(data, textStatus, xhr){
-
 			$('#academicCalendar .scroll').append(data);
 		},
 		// Alert status code and error if fail
