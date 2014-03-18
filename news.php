@@ -3,8 +3,14 @@
 <head>
 	<meta charset="UTF-8">
 	<title>news</title>
+	<style>
+	.about-parsons-news{
+		
+	}
+	</style>
 </head>
 <body>
+	<div class="about-parsons-news">
 	<?php
 
 	define('MAGPIE_DIR', 'magpie/');

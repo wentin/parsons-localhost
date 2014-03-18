@@ -49,7 +49,7 @@ ul, li {
 	position: re;
 	padding: 0;
 	display: none;
-	overflow: hidden;
+	position: relative;
 }
 .wrapper.active {
 	display: block;
@@ -103,13 +103,13 @@ ul.menu {
 	cursor: pointer;
 }
 .rightCol {
-	float: left;	
 	margin-top: 50px;
 	padding: 20px 0 0px 30px;
 	width: 694px;
 	height: 678px;
 	background-color: rgba(0, 0, 0, 0.7);
-	position: relative;
+	position: absolute;
+	right: 0;
 	display: none;
 }
 .rightCol.active {
@@ -117,6 +117,7 @@ ul.menu {
 }
 .secondMenu {
 	width: 100%;	
+	height: 19px;
 }
 .secondMenu li {
 	float: left;	
@@ -141,7 +142,6 @@ ul.menu {
 	font-size: 18px;
 	margin: 0 0 0 0;
 	padding: 15px 0 5px 0;
-	float: left;
 }
 #AMTView .rightCol h1 {
 	border-bottom: solid 2px #9035ae;
@@ -155,7 +155,6 @@ ul.menu {
 	font-size: 22px;
 }
 .scrollWrapper {
-	overflow: hidden;
 	height: 658px;
 	width: 100%;
 	display: none;
@@ -163,16 +162,10 @@ ul.menu {
 .scrollWrapper.active {
 	display: block;	
 }
-.scrollWrap {
-	float: left;
-	height: 571px;
-}
 .scroll {	
-	float: left;
 	height: 615px;
 	overflow-y: scroll; /* has to be scroll, not auto */
 	-webkit-overflow-scrolling: touch;
-
 }
 .scroll a {
 	color: white;

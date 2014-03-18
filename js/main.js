@@ -21,10 +21,10 @@ function loaded () {
 			speedRatioY: 0.5
 		}]
 	});
-	contentScroll = new IScroll('.scrollWrap', { mouseWheel: true });
+	//contentScroll = new IScroll('.scrollWrap', { mouseWheel: true });
 }
 
-document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+// document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
 
 function loadContent(url, selector, targetSelector){
 	var url = url;
@@ -182,9 +182,6 @@ function secondViewEnter(program) {
 	$('.logo').animate({
 		left: -250	
 	}, homeAnimationTime, 'easeInOutQuad');
-
-
-	contentScroll.refresh();
 
 	TNS.slideshow("#home-slideshow", {
 	      albumId: 72407, 
