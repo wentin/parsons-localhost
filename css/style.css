@@ -1,0 +1,583 @@
+@font-face {
+    font-family: 'nixie';
+    src: url('../fonts/nixieone-regular-webfont.eot');
+    src: url('../fonts/nixieone-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/nixieone-regular-webfont.woff') format('woff'),
+         url('../fonts/nixieone-regular-webfont.ttf') format('truetype'),
+         url('../fonts/nixieone-regular-webfont.svg#nixie_oneregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+body {
+	margin: 0;
+	padding: 0;	
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	background-color: black;
+	background-size: cover;
+}
+#home-slideshow {
+	height: 615px;
+}
+.slides-wrapper {
+	height: 100%;
+}
+.clr {
+	clear: both;
+}
+ul, li {
+	list-style: none;
+	padding: 0;
+	margin: 0;	
+}
+#background {
+	width: 1024px;
+	height: 748px;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+}
+#background img {
+	height: 100%;;
+	
+}
+.wrapper {
+	/*background: url(../images/MainBackground5.jpg) no-repeat left top;*/
+	background-size: cover;
+	width: 1024px;
+	height: 748px;	
+	position: re;
+	padding: 0;
+	display: none;
+	position: relative;
+}
+.wrapper.active {
+	display: block;
+}
+.mainMenu {
+	background: url(../images/homeButton.png) no-repeat 10px 21px;
+	background-color: rgba(0, 0, 0, 0.4);
+	width: 98px;
+	height: 18px;
+	color: white;
+	position: absolute;
+	left: 24px;
+	font-size: 10px;
+	text-align: center;
+	padding-top: 32px;
+	padding-left: 15px;
+	cursor: pointer;
+}
+.leftCol {
+	float: left;
+}
+.schoolName {
+	line-height: 24px;
+	font-size: 21px;
+	background: url(../images/TagLogo.png) no-repeat 22px 0px;
+	background-size: 248px;
+	padding-top: 17px;
+	position: absolute;
+	top: 72px;
+	width: 246px;
+	padding-left: 24px;
+	font-weight: bold;
+	text-transform: uppercase;
+	text-shadow: 0 2px 1px rgba(0, 0, 0, 0.5);
+}
+ul.menu {
+	width: 270px;
+	margin-top: 180px;
+	float: left;
+	margin-right: 30px;
+	position: relative;
+}
+.menu li {
+	background-color: rgba(0, 0, 0, 0.85);	
+	height: 42px;
+	font-size: 16px;
+	color: white;
+	line-height: 42px;
+	text-indent: 24px;
+	position: relative;
+	cursor: pointer;
+}
+.rightCol {
+	margin-top: 50px;
+	padding: 20px 0 0px 30px;
+	width: 694px;
+	height: 678px;
+	background-color: rgba(0, 0, 0, 0.7);
+	position: absolute;
+	right: 0;
+	display: none;
+}
+.rightCol.active {
+	display: block;
+}
+.secondMenu {
+	width: 100%;	
+	float: left;
+}
+.secondMenu li {
+	float: left;	
+	padding: 0 10px;
+	line-height: 19px;
+	height: 19px;
+	border-left: solid 1px white;
+}
+.secondMenu li:first-child {
+	border-left: none;	
+	padding: 0 10px 0 0;
+}
+.secondMenu li a {
+	color: white;	
+	text-decoration: none;
+	font-size: 12px;
+}
+.rightCol h1 {
+	color: white;
+	width: 100%;
+	border-bottom: solid 2px #9035ae;
+	font-size: 18px;
+	margin: 0 0 0 0;
+	padding: 15px 0 5px 0;
+}
+#AMTView .rightCol h1 {
+	border-bottom: solid 2px #9035ae;
+}
+#SDSView .rightCol h1 {
+	border-bottom: solid 2px rgba(49, 140, 224);
+}
+.rightCol h2 {
+	color: white;	
+	line-height: 24px;
+	font-size: 22px;
+}
+.scrollWrapper {
+	height: 658px;
+	width: 100%;
+	display: none;
+	padding-top: 20px;
+}
+.scrollWrapper.active {
+	display: block;	
+}
+.scroll {	
+	height: 615px;
+	overflow-y: scroll; /* has to be scroll, not auto */
+	-webkit-overflow-scrolling: touch;
+}
+.scroll a {
+	color: white;
+	text-decoration: none;	
+}
+.scroll .left {
+	width: 305px;
+	float: left;
+}
+.scroll .right {
+	width: 305px;
+	margin-left: 50px;	
+	float: left;
+}
+.scroll table {	
+	color: white;
+	width: 100%;
+	line-height: 18px;
+	font-size: 13px;
+	border-collapse: collapse;
+	border-top: solid 1px #ffffff;
+	margin-bottom: 25px;
+}
+
+.scroll table.total {
+	width: 100%;	
+	border-top: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+.scroll table.total tr td.curricSpacer{
+	text-align: right;	
+}
+.scroll table tr th {
+	padding: 3px;
+	border-bottom: solid 1px #ffffff;	
+	font-weight: bold;
+	text-align: left;
+}
+.scroll table tr th.curricSpacer {
+	text-align: right;
+}
+.scroll table tr td {
+	padding: 3px;
+	border-bottom: dotted 1px #ffffff;	
+}
+.scroll table td.fall-credits {
+	width: 35px;	
+}
+.scroll table td.spring-credits {
+	width: 35px;
+}
+.scroll table tr:last-child td {
+	border-bottom: none;	
+}
+.scroll table .elective-desc {
+	display: none;	
+}
+/**************Home view**********************/
+.wrapper#homeView {/*
+	background: url(../images/MainBackground4@2x.jpg) no-repeat 100% top;*/
+	background-size: cover;
+	overflow: hidden;
+}
+.logo {
+	background: url(../images/HeaderLogo@2x.png) left top;
+	width: 250px;
+	height: 63px;
+	background-size: cover;
+	position: fixed;
+	left: 70px;
+	top: 70px;	
+}
+.tileWrapper {
+	width: 3080px;
+	float: left;
+	padding-bottom: 198px;
+}
+.homeTile {
+	width: 260px;
+	height: 260px;
+	padding: 20px;
+	background-color: rgba(0, 0, 0, 0.85);
+	float: left;
+	margin: 250px 70px 0 70px;
+	position: relative;
+}
+.homeTileLarge {
+    transform: scale(2);
+    -webkit-transform: scale(2);
+    -moz-transform: scale(2);
+    -o-transform: scale(2);
+    -ms-transform: scale(2);
+	opacity: 0.0;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.homeTileNormal {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -o-transform: scale(1);
+    -ms-transform: scale(1);
+	opacity: 1;
+	transition: opacity 0.7s, transform 0.7s;
+	-webkit-transition: opacity 0.7s, -webkit-transform 0.7s;
+}
+.homeTile h1{
+	font-size: 20px;
+	line-height: 25px;
+	text-transform: uppercase;
+	margin: 0;
+}
+.homeTile ul {
+	position: absolute;
+	top: 110px;	
+}
+.homeTile ul li {
+	font-size: 13px;
+	line-height: 20px;	
+}
+ul li span {
+	font-size: 0.5em;	
+}
+
+.homeTile#ABOUT {
+	background-color: rgba(232, 46, 33, 0.85);	
+}
+.homeTile#ADHT {
+	background-color: rgba(216, 60, 141, 0.85);	
+}
+.homeTile#AMT {
+	background-color: rgba(152, 56, 184, 0.85);	
+}
+.homeTile#SCE {
+	background-color: rgba(58, 68, 205, 0.85);	
+}
+.homeTile#SDS {
+	background-color: rgba(49, 140, 224, 0.85);	
+}
+.homeTile#Fashion {
+	background-color: rgba(85, 185, 62, 0.85);	
+}
+.homeTile#PCS {
+	background-color: rgba(227, 188, 16, 0.85);	
+}
+/*************home view end, program color begins **********************/
+#ABOUTView li.first {
+	background-color: rgba(232, 46, 33, 0.85);	
+}
+#ABOUTView li.second {
+	background-color: rgba(207, 41, 29, 0.85);	
+}
+#ABOUTView li.third {
+	background-color: rgba(181, 36, 25, 0.85);	
+}
+#ABOUTView li.fourth {
+	background-color: rgba(156, 31, 22, 0.85);	
+}
+#ABOUTView li.fifth {
+	background-color: rgba(130, 26, 18, 0.85);	
+}
+#ABOUTView li.sixth {
+	background-color: rgba(105, 21, 15, 0.85);	
+}
+#ABOUTView li.seventh {
+	background-color: rgba(77, 14, 7, 0.85);	
+}
+#ABOUTView .rightCol h1 {
+	border-bottom: solid 2px rgb(232, 46, 33);
+}
+
+#AMTView li.first {
+	background-color: rgba(152, 56, 184, 0.85);	
+}
+#AMTView li.second {
+	background-color: rgba(131, 49, 158, 0.85);	
+}
+#AMTView li.third {
+	background-color: rgba(110, 41, 133, 0.85);	
+}
+#AMTView li.fourth {
+	background-color: rgba(89, 33, 107, 0.85);	
+}
+#AMTView li.fifth {
+	background-color: rgba(68, 25, 82, 0.85);	
+}
+#AMTView li.sixth {
+	background-color: rgba(46, 17, 56, 0.85);	
+}
+#AMTView li.seventh {
+	background-color: rgba(34, 12, 41, 0.85);	
+}
+#AMTView li.eighth {
+	background-color: rgba(24, 8, 29, 0.85);	
+}
+#AMTView li.ninth {
+	background-color: rgba(17, 5, 21, 0.85);	
+}
+#AMTView li.tenth {
+	background-color: rgba(8, 2, 10, 0.85);	
+}
+#AMTView .rightCol h1 {
+	border-bottom: solid 2px rgb(152, 56, 184);
+}
+
+#SDSView li.first {
+	background-color: rgba(49, 140, 224, 0.85);	
+}
+#SDSView li.second {
+	background-color: rgba(44, 126, 201, 0.85);	
+}
+#SDSView li.third {
+	background-color: rgba(39, 112, 179, 0.85);	
+}
+#SDSView li.fourth {
+	background-color: rgba(34, 98, 156, 0.85);	
+}
+#SDSView li.fifth {
+	background-color: rgba(29, 84, 134, 0.85);	
+}
+#SDSView li.sixth {
+	background-color: rgba(24, 70, 112, 0.85);	
+	font-size:  14px;
+}
+#SDSView li.seventh {
+	background-color: rgba(20, 56, 90, 0.85);	
+	font-size: 14px;
+}
+#SDSView li.eighth {
+	background-color: rgba(15, 42, 67, 0.85);	
+}
+#SDSView li.ninth {
+	background-color: rgba(10, 28, 45, 0.85);	
+}
+#SDSView li.tenth {
+	background-color: rgba(7, 21, 33, 0.85);	
+}
+#SDSView .rightCol h1 {
+	border-bottom: solid 2px rgb(49, 140, 224);
+}
+
+#ADHTView li.first {
+	background-color: rgba(216, 60, 141, 0.85);	
+}
+#ADHTView li.second {
+	background-color: rgba(191, 53, 125, 0.85);	
+}
+#ADHTView li.third {
+	background-color: rgba(166, 46, 108, 0.85);	
+}
+#ADHTView li.fourth {
+	background-color: rgba(140, 39, 91, 0.85);	
+	font-size: 13px;
+}
+#ADHTView .rightCol h1 {
+	border-bottom: solid 2px rgb(216, 60, 141);
+}
+
+#SCEView li.first {
+	background-color: rgba(58, 68, 205, 0.85);	
+}
+#SCEView li.second {
+	background-color: rgba(46, 54, 166, 0.85);	
+}
+#SCEView li.third {
+	background-color: rgba(36, 42, 128, 0.85);	
+}
+#SCEView li.fourth {
+	background-color: rgba(25, 29, 89, 0.85);	
+}
+#SCEView li.fifth {
+	background-color: rgba(18, 21, 64, 0.85);	
+}
+#SCEView li.sixth {
+	background-color: rgba(12, 15, 48, 0.85);	
+}
+#SCEView li.seventh {
+	background-color: rgba(7, 8, 31, 0.85);	
+}
+#SCEView li.eighth {
+	background-color: rgba(3, 4, 16, 0.85);	
+}
+#SCEView .rightCol h1 {
+	border-bottom: solid 2px rgb(58, 68, 205);
+}
+
+#FashionView li.first {
+	background-color: rgba(85, 185, 62, 0.85);	
+}
+#FashionView li.second {
+	background-color: rgba(74, 161, 55, 0.85);	
+}
+#FashionView li.third {
+	background-color: rgba(62, 135, 46, 0.85);	
+}
+#FashionView li.fourth {
+	background-color: rgba(47, 112, 33, 0.85);	\
+}
+#FashionView li.fifth {
+	background-color: rgba(36, 88, 24, 0.85);	\
+}
+#FashionView .rightCol h1 {
+	border-bottom: solid 2px rgb(85, 185, 62);
+}
+
+#PCSView li.first {
+	background-color: rgba(227, 188, 16, 0.85);	
+}
+#PCSView li.second {
+	background-color: rgba(201, 167, 14, 0.85);	
+}
+#PCSView li.third {
+	background-color: rgba(176, 146, 12, 0.85);	
+}
+#PCSView li.fourth {
+	background-color: rgba(150, 125, 11, 0.85);	
+}
+#PCSView .rightCol h1 {
+	border-bottom: solid 2px rgb(227, 188, 16);
+}
+
+
+.about-parsons-news{
+	padding: 0px;
+}
+
+.about-parsons-news b {
+	display: none;
+}
+.about-parsons-news ul{
+    float: left;
+	width: 273px;
+	/*height: 678px;*/
+	
+	
+	margin-left: 0px;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.about-parsons-news li{
+	float: left;
+	list-style: none;
+	display: list-item;
+
+	margin: 0px;
+	margin-left:0px;
+	width: 273px;
+	
+	font:12px Arial, Helvetica, sans-serif;
+	
+	border-bottom: 1px solid #4f4f4f;
+	
+	cursor: pointer;
+	
+}
+.about-parsons-news li:last-child{
+	border:none;
+}
+.about-parsons-news a{
+	text-decoration: none;
+	color: red;
+	/*color: white;*/
+}
+.about-parsons-news .pubDate{
+	padding: 12px 0 0 0;
+	font:12px Arial, Helvetica, sans-serif; 
+	color: #bc7602;
+	display: inline-block;
+	
+	
+}
+.about-parsons-news .title{
+	
+	font:12px Arial, Helvetica, sans-serif;
+	color: #ffffff;
+	padding: 20px 0 30px 0;
+	line-height: 1;
+	display: inline-block;
+
+
+}
+.about-parsons-news .content{
+	position: absolute;
+	display: block;
+	margin-top: 0px;
+	float: right;
+	width: 394px;
+	margin-left: 273px;
+	font:12px Arial, Helvetica, sans-serif;
+	color: #ffffff; 
+	box-sizing: border-box;
+	padding: 10px;
+	/*opacity: 0;*/
+	/*width:  394px;
+	background-color: #ffffff;*/
+}
+.about-parsons-news .content img {
+	width: 100%;
+}
+.about-parsons-news .entry{
+	width: 370px;
+	margin-left:0px;
+	
+}
+.size-full {
+	max-width: 370px !important;
+}
+.wp-caption-text{
+	max-width: 370px !important;
+}

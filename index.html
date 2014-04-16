@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" ng-app = "myApp">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>ParsonsHD</title>
+
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+	<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+
+	<link rel="apple-touch-icon-precomposed" href="images/apple-touch-icon.jpg" />
+	<!--<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and not (-webkit-min-device-pixel-ratio: 2)" href="images/startup-iphone.png" />
+	<link rel="apple-touch-startup-image" media="(max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2)" href="images/startup-iphone4.png" />
+	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: portrait)" href="images/startup_portrait.png" />
+	<link rel="apple-touch-startup-image" media="(min-device-width: 768px) and (orientation: landscape)" href="images/startup_landscape.png" />
+	<link rel="apple-touch-startup-image" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" href="images/startup_landscape_retina.png"/>
+	<link rel="apple-touch-startup-image" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)"  href="images/startup_portrait_retina.png"/>-->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <!--<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyDTTbVPzJ84Wwj7oNK2SD9GG2C4hO4hrGo&sensor=false&amp;language=en"></script>-->
+
+    <!--<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>  
+    -->
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="js/jgestures.js"></script>
+    <script type="text/javascript" src="js/tns-slideshow.js"></script>
+    <script type="text/javascript" src="js/iscroll.js"></script>
+	<script type="text/javascript">
+        $(function(){
+          //$("#ABOUTView").load("aboutview.html"); 
+          // $("#ADHTView").load("adhtview.html"); 
+          $("#AMTView").load("amtview.html"); 
+          $("#SCEView").load("sceview.html"); 
+          $("#SDSView").load("sdsview.html"); 
+          $("#FashionView").load("faview.html"); 
+          $("#PCSView").load("precontview.html"); 
+        });
+    </script>
+    <script type="text/javascript" src="js/loaddata.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+   
+</head>
+<body>
+<script>
+</script>
+<div class="wrapper active" id="homeView">
+	<div class="logo"></div>
+	<div id="homeScroll">
+        <div class="tileWrapper">
+            <div class="homeTile" id="ABOUT">
+                <h1>About <br/>Parsons</h1>
+                <ul>
+                    <li>Introduction</li>
+                    <li>Academics</li>
+                    <li>Student Works</li>
+                    <li>Culture and Place</li>
+                    <li>Admission</li>
+                    <li>Location</li>
+                    <li>Website</li>
+                </ul>
+          </div>
+            <div class="homeTile" id="ADHT">
+                <h1>School of <br/>Art and Design <br/>History and Theory</h1>
+                <ul>
+                    <li>Design Studies <span>MA</span></li>
+                    <li>Fashion Studies <span>MA</span></li>
+                    <li>History of Decorative Arts and Design <span>MA</span></li>
+                </ul>
+            </div>
+            <div class="homeTile" id="AMT">
+                <h1>School of <br/>Art, Media and <br/>Technology</h1>
+                <ul>
+                    <li>Graphic Design <span>AAS</span></li>
+                    <li>Communication Design <span>MFA</span></li>
+                    <li>Design and Technology <span>BFA, MFA</span></li>
+                    <li>Fine Arts <span>BFA, MFA</span></li>
+                    <li>Illustration <span>MFA</span></li>
+                    <li>Photography <span>BFA, MFA</span></li>
+                </ul>
+            </div>
+            <div class="homeTile" id="SCE">
+                <h1>School of <br/>Constructed <br/>Environment</h1>
+                <ul>
+                    <li>Architectural Design <span></span>BFA</span></li>
+                    <li>Architecture <span>M.Arch</span></li>
+                    <li>Lighting Design <span>MFA</span></li>
+                    <li>Interior Design <span>AAS, BFA, MFA</span></li>
+                    <li>Product Design <span>BFA</span></li>
+                </ul>
+            </div>
+            <div class="homeTile" id="SDS">
+                <h1>School of <br/>Design <br/>Strategies</h1>
+                <ul>
+                    <li>Design Business <span>Graduate Certificate</span></li>
+                    <li>Design and Urban Ecologies <span>MS</span></li>
+                    <li>Environmental Studies <span>BS</span></li>
+                    <li>Integrated Design <span>BFA</span></li>
+                    <li>Strategic Design and Management <span>BBA MS</span></li>
+                    <li>Theories of Urban Practice <span>MA</span></li>
+                    <li>Transdisciplinary Design <span>MFA</span></li>
+                    <li>Urban Design <span>BS</span></li>
+                </ul>
+            </div>
+            <div class="homeTile" id="Fashion">
+                <h1>School of <br/>Fashion</h1>
+                <ul>
+                    <li>Fashion Design <span>AAS, BFA</span></li>
+                    <li>Fashion Design and Society <span>MFA</span></li>
+                    <li>Fashion Marketing <span>AAS</span></li>
+                </ul>
+            </div>
+            <div class="homeTile" id="PCS">
+                <h1>Pre-college and <br/>Continuing Studies</h1>
+                <ul>
+                    <li>Summer Programs</li>
+                    <li>Pre-College Academy</li>
+                    <li>Continuing Education</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="wrapper " id="ABOUTView">
+
+    <div class="mainMenu">
+        MAIN MENU
+    </div>
+    <div class="leftCol">
+        <div class="schoolName">
+            About <br/>
+            Parsons 
+        </div>
+        <ul class="menu">
+            <li class="first" id="aboutParsons">About Parsons</li>
+            <li class="second" id="Academics">Academics</li>
+            <li class="third" id="StudentWorks">Student Works</li>
+            <li class="fourth" id="CultureAndPlace">Culture and Place</li>
+            <li class="fifth" id="Admission">Admission</li>
+            <li class="sixth" id="Location">Location</li>
+            <li class="seventh" id="Website">Website</li>
+        </ul>
+    </div>
+    <div class="rightCol active" id="aboutParsons">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#messageFromTheDean">Message from the Dean</a></li>
+            <li><a href="#academicCalendar">Academic Calendar</a></li>
+            <li><a href="#eventCalendar">Event Calendar</a></li>
+            <li><a href="#news">News</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+                <h3>A LEGACY OF PROGRESSIVE INNOVATION</h3>
+                <P>A pioneer in art and design education since its founding in 1896, Parsons has cultivated outstanding artists, designers, scholars, businesspeople, and community leaders for more than a century. Today, when design thinking is increasingly being employed to solve complex global problems, Parsons is leading new approaches to art and design education.
+                </P>
+                <P>At Parsons, a diverse community of students develops critical thinking skills and applies them to challenges ranging from environmental degradation to physical accessibility and humanitarian crises. Through a network of interconnected design laboratories, students explore global phenomena at multiple sites and scales of engagement, from on-campus research initiatives to partnerships that affect change in New York and around the world.  Each undergraduate, associate, and graduate degree program at Parsons is housed in one of five schools. This organizational structure supports Parsons’ educational mission, and its interdisciplinary approach builds community among students and faculty in related disciplines.</P>
+                <img src="images/parsonsTheNewSchoolForDesign.png">
+                <P>arsons also offers open enrollment courses for nondegree students of all ages, in which you can build a portfolio or take art and design courses for credit or on a noncredit basis. 
+                </P>
+                <h3>PARSONS IN THE NEW SCHOOL</h3>
+                <p>he New School holds a respected place among forward-thinking American Universities, attracting adventurous, creative, civic-minded scholars. A Parsons education combines the creative focus of an independent art and design school with the resources of The New School, a recognized liberal arts university. Both institutions have long been advocates of progressive thought and action, taking on urgent challenges facing society and preparing students to work in new and existing fields. Students complement their design and art education with courses in anthropology, public policy, business, media studies, the performing arts, and other disciplines, developing the capacity to work collaboratively across a range of projects and settings. </p>
+                <P>The New School is made up of seven divisions that offer undergraduate, associate, and graduate degrees and certificates in a number of disciplines. </P>
+                <img src="images/divisionOfTheNewSchool.png">
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="messageFromTheDean" >
+            <h1>MESSAGE FROM THE DEAN</h1>
+            <div class="scroll">
+                <img src="images/dean.png">
+                <p>Human imagination and endeavor are constantly remaking the world.  As a species, we prod, bend, and transform the raw materials and energy flows of the planet into the objects, spaces, and places of everyday life.  We are makers of cities, homes, buildings, and parks, cars, trains, planes, and bicycles.  We develop technologies, tools, and networks that allow us to communicate across great distances and extend the capacity of our bodies to sense and comprehend the world around us.  We are storytellers and explorers, by turns restless, rooted, innovative, cautious, atnd wildly creative.  We define beauty, proportion, and aesthetics in ways that bring us together and drive us apart. Human beings are artists and designers capable of the most compassionate, farsighted, and joyful actions and of doing great harm. Design is not a neutral act. </p>
+                <p>Design enables human action.  It is purposeful and magnifies capacity.  It reveals and conceals who we are.  And while design has played a role in every epoch of human history, it has never been more important than now.  Today, communities around the world are confronted with new material, strategic, and interconnected challenges: food systems,fresh water resources, poverty, healthcare, energy efficiency, transportation infrastructure, and humanitarian aid, to mention just a few.  Design alone will not solve these challenges but neither will they be adequately engaged without the creativity and strategic thinking of designers. We live in a designed world.</p>
+                <p>Design is emergent. In many critical ways, public awareness of design has never been greater.  Design thinking is becoming highly regarded among business leaders and policymakers and it is increasingly understood as adding significant value because it frames problems and envisions solutions from a different perspective.  As design evolves, it is as often concerned with conceiving and arranging complex systems as it is with creating beautiful and useful objects.  Design is a generative and a regenerative endeavor with immediate impact and long-term implications. And the challenges of our time require more than ever that artists and designers focus their talents not simply on how things appear but on how things fundamentally are and, more to the point, how they could be. Here, a critical link between design, social science, and policy emerges, representing part of what distinguishes Parsons as a place to learn.</p>
+                <p>Parsons is organized into five schools—Art, Media, and Technology; Fashion; Constructed Environments; Art and Design History and Theory; and Design Strategies. This structure facilitates specialization in a given field while enabling interdisciplinary and cross-school scholarship that affords designers the broad design perspective they need in today’s professional world. Additionally, Parsons’ students benefit greatly from our integration within a research and liberal arts university, The New School.  Our students can complement their design education with first-rate courses in anthropology, political science, public policy, music and drama, and many other disciplines, acquiring the capacity to work collaboratively across a wide range of projects and contexts.</p>
+                <p>The faculty and students at Parsons build critically engaged art and design practices.  Whether they’re studying fine arts, fashion or photography, architecture, product or lighting design, illustration, interior or urban design, communication design or technology, integrated or transdisciplinary design, the design of business, the business of design, the core questions of the environment and sustainability or design itself, Parsons students and faculty continuously seek to advance art and design and renew their relevance in the world.</p>
+                <p>I strongly believe that it is an ideal time to study art and design and that Parsons provides a unique and deeply relevant context in which to do it.  I hope you will join the talented, energetic, and creative students and faculty at Parsons.  The future is always being designed.  Come be part of it.</p>
+                <p>Joel Towers</p>
+                <p>Dean, Parsons The New School for Design</p>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="academicCalendar">
+        </div>
+        
+        <div class="scrollWrapper" id="eventCalendar">
+            <h1>Events</h1>
+            <script type="text/javascript"src="http://events.newschool.edu/widget/view?schools=newschool&days=31&num=50"></script>
+            <!-- <div class="scroll">
+                
+            </div -->
+        </div>
+
+        <div class="scrollWrapper" id="news">
+            <h1>News</h1>
+            <div class="scroll">
+                
+            </div>
+        </div>
+    </div>
+    <div class="rightCol" id="Academics">
+        <ul class="secondMenu">
+            <li><a href="#undergraduate">Undergraduate</a></li>
+            <li><a href="#graduate">Graduate</a></li>
+            <li><a href="#associates">Associates</a></li>
+            <li><a href="#summerPrograms">Summer Programs</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="undergraduate" >
+            <h1>UNERGRADUATE</h1>
+            <div class="scroll">
+                <p>Parsons’ undergraduate programs offer rigorous art and design training within an environment of cross-disciplinary collaboration. 
+                </p>
+                <h3>MAJORS</h3>
+                <p>Architectual Design (BFA)
+                Communication Design (BFA) 
+                Design and Technology(BFA) 
+                Environmental Studies (BS) 
+                Fashion Design (BFA) 
+                Fine Arts (BFA) 
+                Illustration (BFA) 
+                Integrated Design (BFA) 
+                Interior Design (BFA) 
+                Photography (BFA) 
+                Product Design (BFA) 
+                Strategic Design and Management (BBA) 
+                Urban Design (BS) </p>
+                <h3>First Year</h3>
+                <p>Parsons' first-year course of study* immerses you in an exploration of art and design concepts, skills, and critical practices, training you to become flexible thinkers, strong makers, and lifelong learners. 
+                The curriculum offers a survey of approaches to art and design that prepare you for the undergraduate majors at Parsons and enable you to envision paths beyond the confines of a single discipline. </p>
+                <p>First year is a common experience for all incoming Parsons students, with the same set of course requirements for students in all BFA programs. You will be able to shape their path of study within those requirements, selecting from the various options available for many of the required courses. BBA students at Parsons follow a similar curriculum, with a few exceptions specific to their programs, and share many courses with BFA students. </p>
+                <p>After completing freshman-year coursework, students work with advisors, in consultation with instructors, to define their goals and choose the appropriate degree program.</p>
+
+                <p class="footnote">Students entering Parsons prior to Fall 2013 take their first-year courses through the Foundation program. </p>
+                <h3>GROUNDING IN LIBERAL ARTS</h3>
+                <P>All undergraduate programs include a strong liberal arts component, including courses in art and design history and theory, that provide a context for studio practice. And because Parsons is part of The New School, you can choose from a wide range of lecture courses and electives in humanities, social sciences, media studies, and business. Parsons also offers a dual BA/BFA degree in which you can combine a BFA from Parsons with a BA from Eugene Lang College The New School for Liberal Arts. </P>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="graduate" >
+            <h1>GRADUATE</h1>
+            <div class="scroll">
+                <p>Art and design professionals in the 21st century must navigate a fluid and networked global culture. Parsons prepares its graduates for this rapidly evolving world by offering a range of cross- disciplinary graduate programs that place advanced studio practice and research at their center.</p>
+                <h3>GRADUATE PROGRAMS</h3>
+                <P>Architecture (M.arch)
+                Architecture (M.Arch) / 
+                Lighting Design (MFA) dual degree
+                Design Business (Graduate Certificate)
+                Design and Technology (MFA)
+                Design and Urban Ecologies (MS)
+                Design Studies (MA)
+                Fashion Design and Society (MFA)
+                Fashion Studies (MA)
+                Fine Arts (MFA)
+                History of Decorative Arts and Design (MA)
+                Interior Design (MFA)
+                Lighting Design (MFA)
+                Photography (MFA)
+                Strategic Design and Management (MS)
+                Theories of Urban Practice (MA)
+                Transdisciplinary Design (MFA)</P>
+                <h3>A COMMUNITY OF SCHOLATS</h3>
+                <p>Students are part of a select yet diverse community of independent thinkers. More than 500 graduate students attend programs ranging in size from 12 to 175 enrollees. All students enjoy intimate seminar and studio classes, and work closely with faculty to plan self-designed and flexible programs.</p>
+                <h3>RESEARCH CULTURE</h3>
+                <p>A network of experimental design laboratories and research institutes allow students to collaborate with faculty and peers from Parsons and other New School graduate programs, connect with external partners, and explore unique learning opportunities outside of the classroom. Visit Research and Projects to learn more about the range of opportunities for art and design research at the school.
+                </p>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="associates">
+            <h1>ASSOCIATES DEGREES</h1>
+            <div class="scroll">
+                <p>For the professional prepared to make the leap into design, Parsons offers Associate in Applied Science (AAS) degrees in Fashion Design, Fashion Marketing, Graphic Design, and Interior Design.
+                </p>
+                <h3>ASSOCIATES DEGREES</h3>
+                <p>Fashion Design
+                Fashion Marketing
+                Graphic Design
+                Interior Design</p>
+                <h3>GRADUATES IN DEMAND</h3>
+                <p>The AAS programs are best suited to students with college experience who are clear about their interests in the field of design and prepared for rapid immersion in a professional course of study. Our students enter the school as experienced attorneys, bankers, teachers, stockbrokers, and chefs. When they graduate from Parsons, they are merchandisers, fashion designers, graphic artists, and interior designers versed in the language, process, and technology of their new fields. They are also highly sought-after talents on the job market: In a recent survey of AAS graduates, 96 percent of survey respondents had found work related to their major.</p>
+                <h3>FLEXIBLE LEARNING</h3>
+                <p>Qualified applicants who wish to complete their design training in a short time can apply to the Fast Track program, which enables students to earn an AAS degree with 34 credits in a single academic year (fall and spring semesters). Students may also study part time, and earn their degree over several years. For further flexibility, some AAS courses are offered online as well as on campus. 
+                </p>
+                <p>The entire AAS Fashion Marketing and AAS Graphic Design degrees can be completed online from anywhere.</p>
+            </div>
+            
+        </div>
+        
+        <div class="scrollWrapper" id="summerPrograms">
+            <h1>SUMMER PROGRAMS</h1>
+            <div class="scroll">
+                <h3>NEW YORK OR PARIS?</h3>
+                <p>Our Summer Intensive Studies programs, offered in New York and Paris, are boot camps in art and design. Whether you're a high school student looking to build your portfolio, a college student interested in enhancing your current degree studies, or an adult investigating career options, our summer programs will help you define and achieve your future goals. Courses are offered at pre-college and college/adult levels, for two- and four-week-long sessions. </p>
+                <h3>SUMMER INTENSIVE STUDIES:NEW YORK</h3>
+                <p>This intensive four-week, four-credit program is open to all students (16 years of age or older) who wish to deepen their knowledge of art and design in an academically rigorous and artistically stimulating environment. Students spend five full days a week in studio classes complemented by demanding homework assignments. Courses are taught by Parsons faculty and New York-based artists and designers. Coursework is supplemented with events including portfolio reviews, alumni career panels, and industry guest lecturers that prepare students for admission to degree programs or enable them to further explore career paths. Summer Intensive Studies students may live in New School residence halls convenient to the Parsons Village campus. To register or for more information, visit <a href="www.newschool.edu/parsons/summer-ny/">www.newschool.edu/parsons/summer-ny/</a></p>
+                <h3>SUMMER INTENSIVE STUDIES: PARIS</h3>
+                <p>The Summer Intensive Studies: Paris program allows you to experience this vibrant city from an insider's perspective by exploring the history of European art and design first-hand. Offered in two- or four- week sessions, the program is open to all students (16 years of age or older) who wish to deepen their art and design knowledge and skills in a rigorous academic environment. Students attend classes Monday through Friday for six hours per day. Classes meet at sites ranging from art and design exhibitions to architectural landmarks and parks throughout the city. Coursework is complemented by weekend excursions and day trips in and around Paris. Housing through Parsons is available for students enrolled in the four-week Pre-College program. To register or for more information, visit <a href="www.newschool.edu/parsons/summer-paris/">www.newschool.edu/parsons/summer-paris/</a></p>
+                <h3>ARCHITECTURE, INTERIOR DESIGN, AND LIGHTING DESIGN INTENSIVE IN NYC</h3>
+                <p>Open to all current college students and college graduates, the five-week Summer Studies in Constructed Environments program adheres to the same exacting standards as other offerings in Summer Intensive Studies. Focusing on architecture, interior design, and lighting design, this 4-credit studio-based curriculum is designed to prepare applicants for admission to professional degree programs (MArch, MFA in Interior Design, or MFA in Lighting Design) at Parsons and other competitive graduate schools. Coursework covers design, drawing, digital representation and computer skills, architectural analysis, design history, and theory. To register or for more information, visit <a href="www.newschool.edu/parsons/summer-studies-in-constructed-environments/">www.newschool.edu/parsons/summer-studies-in-constructed-environments/</a></p>
+                <h3>GRADUATE CREDIT COURSES</h3>
+                <p>The Masters Program in the History of Decorative Arts operates a two-week Graduate International Summer Program in London. In addition, the Bank Street College of Education in New York City and Parsons offer a joint three-summer Leadership in the Arts graduate degree program for arts educators that leads to a Masters of Science in Education. To register or for more information, visit<a href="www.newschool.edu/parsons/summer-programs/">www.newschool.edu/parsons/summer-programs/</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="rightCol" id="StudentWorks">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+                <div id="home-slideshow" class="tns-slideshow"></div>
+
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>Environmental <BR/>Studies (BS)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2></h2>
+                    <div class="curriculumWrapper"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+        
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+           
+        </div>
+    </div>
+    <div class="rightCol" id="CultureAndPlace">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+            
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>Integrated Design <br/>(BFA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2></h2>
+                    <div class="curriculumWrapper"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+        
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+           
+        </div>
+    </div>
+    <div class="rightCol" id="Admission">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+            
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>Strategic Design and Management (BBA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2></h2>
+                    <div class="curriculumWrapper"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+        
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+           
+        </div>
+    </div>
+    <div class="rightCol" id="Location">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+            
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>Strategic Design and Management (MS)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2></h2>
+                    <div class="curriculumWrapper"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+        
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+           
+        </div>
+    </div>
+    <div class="rightCol" id="Website">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+            
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>FINE ARTS <BR/>(BFA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <div class="right">
+                    <h2>FINE ARTS <BR/>(BA/BFA)</h2>
+                    <div class="curriculumWrapper"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+        
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+           
+        </div>
+    </div>
+
+</div>
+
+<div class="wrapper " id="ADHTView" >
+
+    <div class="mainMenu">
+        MAIN MENU
+    </div>
+    <div class="leftCol">
+        <div class="schoolName">
+            School of <br/>
+            Art and Design <br/>
+            History and Theory
+        </div>
+        <ul class="menu">
+            <li class="first" id="aboutTheSchool">About the School</li>
+            <li class="second" id="designStudiesMA">Design Studies <span>MA</span></li>
+            <li class="third" id="fashionStudiesMA">Fashion Studies <span>MA</span></li>
+            <li class="fourth" id="historyofDecorativeArtsandDesignMA">History of Decorative Arts and Design <span>MA</span></li>
+        </ul>
+    </div>
+    <div class="rightCol active" id="aboutTheSchool">
+        <h1>ABOUT THE SHCOOL</h1>
+        <div class="scroll">
+            <h3>ART AND DESIGN HISTORY AND THEORY</h3>
+            <img scr = "images/iPad_ADHT_AboutSchool.png">
+            <h4>The School of Art and Design History and Theory offers courses to students in all schools at Parsons. Its curriculum helps student develop the intellectual rigor necessary to become the next generation of art and design leaders.</h4>
+        </div>
+    </div>
+    <div class="rightCol" id="designStudiesMA">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+                <h4>Drawing on the breadth and depth of expertise in design theory and practice at Parsons, this new master of arts program is an opportunity to explore design as both a field of scholarly research and an agent of social change.</h4>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>DESIGN STUDIES <BR/>(MA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <!-- <div class="right">
+                    <h2>FINE ARTS <BR/>(BA/BFA)</h2>
+                    <div class="curriculumWrapper"></div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+            <!-- START EMBED CODE -->
+            <h1>CULTURE AND PLACE</h1>
+            <div class="scroll">
+                <div id="ma-design-studies-culture-place" class="tns-slideshow"></div>
+            </div>
+            <!-- END EMBED CODE -->
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+            <!-- START EMBED CODE -->
+            
+            <!-- END EMBED CODE -->
+        </div>
+    </div>
+    <div class="rightCol" id="fashionStudiesMA">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+                <h4>In this groundbreaking MA program, students engage with the evolving field of fashion studies. Using an interdisciplinary approach, they explore fashion as object, image, text, practice, theory, and concept and develop a critical understanding of fashion and its complex global intersections with identities, histories, and cultures in the contemporary world.</h4>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>FASION STUDIES <BR/>(MA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <!-- <div class="right">
+                    <h2>FINE ARTS <BR/>(BA/BFA)</h2>
+                    <div class="curriculumWrapper"></div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+            <!-- START EMBED CODE -->
+            <h1>CULTURE AND PLACE</h1>
+            <div class="scroll">
+                <div id="ma-fashion-studies-culture-place" class="tns-slideshow"></div>     
+            </div>
+            <!-- END EMBED CODE -->
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+            <!-- START EMBED CODE -->
+            
+            <!-- END EMBED CODE -->
+        </div>
+    </div>
+    <div class="rightCol" id="historyofDecorativeArtsandDesignMA">
+        <ul class="secondMenu">
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#curriculum">Curriculum</a></li>
+            <li><a href="#culture">Culture and place</a></li>
+            <li><a href="#studentWork">Student Work</a></li>
+        </ul>
+        
+        <div class="scrollWrapper active" id="introduction" >
+            <h1>INTRODUCTION</h1>
+            <div class="scroll">
+                <h4>Offered jointly with the <a title="Cooper-Hewitt, National Design Museum" href="http://www.cooperhewitt.org/">Cooper-Hewitt, National Design Museum</a>, in New York, the History of Decorative Arts and Design program leads to a master of arts degree. Graduates go on to careers as historians, curators, and scholars in museums, universities, historic houses, auction houses, and galleries.</h4>
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="curriculum" >
+            <h1>CURRICULUM</h1>
+            <div class="scroll">
+                <div class="left">
+                    <h2>HISTORY OF DECORATIVE<BR/>ARTS AND DESIGN (MA)</h2>
+                    <div class="curriculumWrapper">
+                    </div>
+                </div>
+                <!-- <div class="right">
+                    <h2>FINE ARTS <BR/>(BA/BFA)</h2>
+                    <div class="curriculumWrapper"></div>
+                </div> -->
+            </div>
+        </div>
+        
+        <div class="scrollWrapper" id="culture">
+            <!-- START EMBED CODE -->
+            
+            
+            <!-- END EMBED CODE -->
+        </div>
+        
+        <div class="scrollWrapper" id="studentWork">
+            <!-- START EMBED CODE -->
+            
+            <!-- END EMBED CODE -->
+        </div>
+    </div>
+
+</div>
+<div class="wrapper " id="AMTView">
+</div>
+<div class="wrapper " id="SCEView" >
+</div>
+<div class="wrapper " id="SDSView">
+</div>
+<div class="wrapper " id="FashionView" >
+</div>
+<div class="wrapper " id="PCSView">
+</div>
+<div id="background">
+    <img src="images/MainBackground4_2x.jpg" > 
+</div>
+</body>
+</html>
